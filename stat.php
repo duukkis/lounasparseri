@@ -1,5 +1,4 @@
 <?php
-
 /**
  * helper 1, gets the lunch pages
  **/
@@ -36,7 +35,7 @@ function parseLunches($file, $items, $debug = false){
 
   $numbas = array();
   $total = 0;
-  $ignore_these = array("buffet", "lounaspöytä", "salaattipöytä", "salaattibaari");
+  $ignore_these = array();
 
   // loop lunches
   foreach($html->find('div.item-body ul li') AS $l){
